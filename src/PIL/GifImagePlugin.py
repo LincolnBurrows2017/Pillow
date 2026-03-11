@@ -121,7 +121,7 @@ class GifImageFile(ImageFile.ImageFile):
                 palette = ImagePalette.raw("RGB", p)
                 self.global_palette = self.palette = palette
 
-        self._fp = self.fp  # FIXME: hack
+        self._fp = self.fp  # Store reference to file pointer for seeking
         self.__rewind = self.fp.tell()
         self._n_frames: int | None = None
         self._seek(0)  # get ready to read first frame
