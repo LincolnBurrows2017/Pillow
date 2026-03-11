@@ -247,7 +247,7 @@ class ImImageFile(ImageFile.ImageFile):
 
         self.__offset = offs = self.fp.tell()
 
-        self._fp = self.fp  # FIXME: hack
+        self._fp = self.fp  # Store reference to file pointer for seeking
 
         if self.rawmode.startswith("F;"):
             # ifunc95 formats
