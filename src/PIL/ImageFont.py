@@ -918,7 +918,7 @@ def truetype(
 
 def load_path(filename: str | bytes) -> ImageFont:
     """
-    Load font file. Same as :py:func:`~PIL.ImageFont.load`, but searches for a
+    Load a font file. Same as :py:func:`~PIL.ImageFont.load`, but searches for a
     bitmap font along the Python path.
 
     :param filename: Name of font file.
